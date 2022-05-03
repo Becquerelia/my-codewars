@@ -14,9 +14,9 @@ Good Luck! */
 //! Solution:
 
 function doubleChar(str) {
-    let newStr = "";
+  let newStr = "";
     for (let i = 0; i < str.length; i++) {
       newStr += str[i] + str[i];
-      }
-      return newStr;
     }
+  return newStr;
+}
