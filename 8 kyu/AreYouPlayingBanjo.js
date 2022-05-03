@@ -1,24 +1,23 @@
- 
- ```javascript
- const aboutMe = {
-  
-   city: "Madrid",
-   code: ["JavascriptES6", "HTML5", "CSS3"],
-   technologies: ["React", "Node.js", "ExpressJS", "Handlebars", "Bootstrap", "MUI"],
-   backEndTools: ["RESTful API", "Axios", "Postman"],
-   dataBase: ["MongoDB", "Mongoose", "noSQL"],
-   otherPackages: ["Stripe", "Socket.io", "FullCalendar", "Nodemailer", "Cloudinary", "GoogleMaps Platform"],
-   versionControl: ["gitHub", "Netlify", "Heroku"],
-  
-   webDevEducation: {
-                         teachInstitution: "IronHack",
-                         course: "Full Stack Web Developer",
-                         format: "Full Time",
-                         location: "remote"
-                       },
-  
-  preference: "Front-end"
- }
- ```
-  
- 
+//! ARE YOU PLAYING BANJO?
+
+// https://www.codewars.com/kata/53af2b8861023f1d88000832
+
+/* Create a function which answers the question "Are you playing banjo?".
+If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+The function takes a name as its only argument, and returns one of the following strings:
+
+name + " plays banjo" 
+name + " does not play banjo"
+Names given are always valid strings. */
+
+
+//! Solution:
+
+function areYouPlayingBanjo(name) {
+  if (name.startsWith("R") || name.startsWith("r")) {
+    return name + " plays banjo";
+  } else {
+    return name + " does not play banjo"
+  }
+}
